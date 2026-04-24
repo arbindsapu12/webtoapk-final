@@ -34,12 +34,15 @@ jobs:
 
       - name: Install Gradle
         run: sudo apt-get install gradle -y
-
+        
+      - name: Give permission
+        run: chmod +x gradlew
+        
       - name: Build APK
-        run: gradle :app:assembleDebug
+        run: ./gradlew :app:assembleDebug
 
       - name: Build AAB
-        run: gradle :app:bundleRelease
+        run: ./gradlew :app:bundleRelease
 
       - name: Upload
         uses: actions/upload-artifact@v4

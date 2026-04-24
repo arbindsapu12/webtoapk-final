@@ -30,10 +30,7 @@ jobs:
       - name: Install SDK
         run: |
           yes | sdkmanager --licenses
-          sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
-
-      - name: Install Gradle
-        run: sudo apt-get install gradle -y
+          sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.
         
       - name: Give permission
         run: chmod +x gradlew

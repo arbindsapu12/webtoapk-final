@@ -15,6 +15,10 @@ android {
 
         buildConfigField "String", "WEBSITE_URL", "\"https://example.com\""
     }
+
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {

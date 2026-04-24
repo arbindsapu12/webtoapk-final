@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
 
-        webView.loadUrl("https://webtoapk.online");
+        String url = BuildConfig.WEBSITE_URL;
+        webView.loadUrl(url);
     }
 }
